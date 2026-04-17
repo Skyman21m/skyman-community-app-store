@@ -4,7 +4,7 @@ name: Alby Hub Relay Select
 tagline: Alby Hub with a user-selectable Nostr relay for NWC connections.
 icon: https://raw.githubusercontent.com/Skyman21m/skyman-community-app-store/master/skyman-alby-hub-relay-select/images/icon.svg
 category: finance
-version: "1.22.0-dev.relay-select.2"
+version: "1.22.0-dev.relay-select.3"
 port: 59100
 description: >-
   Fork of Alby Hub that adds a Settings UI to pick the Nostr relay used for

@@ -6,7 +6,7 @@ services:
       APP_PORT: 8080
       PROXY_AUTH_ADD: "true"
   server:
-    image: ghcr.io/skyman21m/hub:relay-select-2
+    image: ghcr.io/skyman21m/hub:relay-select-3
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
