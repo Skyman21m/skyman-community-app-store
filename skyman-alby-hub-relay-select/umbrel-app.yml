@@ -1,6 +1,6 @@
 manifestVersion: 1
-id: alby-hub-relay-select
-name: Alby Hub (Relay Select)
+id: skyman-alby-hub-relay-select
+name: Alby Hub Relay Select
 tagline: Alby Hub with a user-selectable Nostr relay for NWC connections.
 icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.svg
 category: finance

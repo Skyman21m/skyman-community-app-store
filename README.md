@@ -16,6 +16,6 @@ Install **Alby Hub (Relay Select)** from the store.
 
 ## Apps
 
-- **alby-hub-relay-select** — Fork of [getAlby/hub](https://github.com/getAlby/hub)
+- **skyman-alby-hub-relay-select** — Fork of [getAlby/hub](https://github.com/getAlby/hub)
   with a "Nostr Relay" section added to Settings. Dropdown of main public relays
   + a Custom wss:// option. Restart required after change.
