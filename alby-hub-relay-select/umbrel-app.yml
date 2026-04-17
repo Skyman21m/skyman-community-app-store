@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: alby-hub-relay-select
+name: Alby Hub (Relay Select)
+tagline: Alby Hub with a user-selectable Nostr relay for NWC connections.
+icon: https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/icon.svg
+category: finance
+version: "1.21.4-relay-select-1"
+port: 59100
+description: >-
+  Fork of Alby Hub that adds a Settings UI to pick the Nostr relay used for
+  NIP-47 (NWC) connections from a preset list or a custom wss:// URL.
+developer: Skyman21m
+website: https://github.com/Skyman21m
+submitter: Skyman21m
+repo: https://github.com/Skyman21m/hub
+support: https://github.com/Skyman21m/hub/issues
+gallery:
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/wallet.png
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/connections.png
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/store.png
+  - https://raw.githubusercontent.com/getAlby/umbrel-community-app-store/master/alby-albyhub/images/node.png
+releaseNotes: >-
+  First test build. Adds a "Nostr Relay" section in General Settings: dropdown
+  of main public relays plus a Custom wss:// option. Restart required after
+  change.
+dependencies:
+  - lightning
+path: ""
+defaultUsername: ""
+defaultPassword: ""
