@@ -1,0 +1,51 @@
+manifestVersion: 1
+id: skyman-mempool-alert
+name: Mempool Alert
+tagline: Get a Nostr DM when a solo Bitcoin block is found by your favorite pool
+icon: https://raw.githubusercontent.com/Skyman21m/skyman-community-app-store/master/skyman-mempool-alert/images/icon.png
+category: bitcoin
+version: "0.1.0"
+port: 3737
+description: >-
+  Watches the mempool.space WebSocket for newly mined Bitcoin blocks and sends
+  you a Nostr Direct Message (NIP-17) the moment one is found by a pool you
+  watch — Public Pool, Solo CK, Braiins Solo, SoloPool.com, unknown solo miners,
+  or any pool slug from mempool.space/mining/pools.
+
+
+  The bot generates its own Nostr key on first start (stored encrypted on disk,
+  rotatable). You configure the recipient npub(s), the pools to watch, and the
+  bot's own profile (kind 0) from a small web UI. Multiple recipients are
+  supported. NIP-17 inbox discovery (kind 10050) is automatic, with NIP-42 auth
+  for relays that require it.
+
+
+  Designed to run 24/7 on your Umbrel — zero maintenance, no third-party API
+  keys, no Bitcoin Core dependency. Just outbound network access.
+developer: Skyman21m
+website: https://github.com/Skyman21m/skyman-community-app-store
+submitter: Skyman21m
+submission: https://github.com/Skyman21m/skyman-community-app-store
+repo: https://github.com/Skyman21m/mempool-alert
+support: https://github.com/Skyman21m/mempool-alert/issues
+gallery:
+  - https://raw.githubusercontent.com/Skyman21m/skyman-community-app-store/master/skyman-mempool-alert/images/icon.png
+releaseNotes: >-
+  Initial release.
+
+
+  - WebSocket subscription to mempool.space for new Bitcoin blocks.
+
+  - NIP-17 (gift-wrapped) Nostr DMs to one or many recipient npubs.
+
+  - Automatic recipient inbox discovery via kind 10050.
+
+  - NIP-42 client auth for relays that require it.
+
+  - Web UI for managing recipients, watched pools, and the bot's profile.
+
+  - Auto-generated bot Nostr key on first run, stored under /app/data.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

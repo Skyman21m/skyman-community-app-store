@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: skyman-mempool-alert_web_1
+      APP_PORT: 3737
+      PROXY_AUTH_ADD: "true"
+
+  web:
+    image: ghcr.io/skyman21m/mempool-alert:0.1.0@sha256:d261c18f433fa318acf8a62422014e6f670c85e05d881aacfc9359933ae532d1
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 30s
+    environment:
+      NODE_ENV: "production"
+      WEB_HOST: "0.0.0.0"
+      CONFIG_PATH: "/app/data/config.json"
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data
